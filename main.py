@@ -13,7 +13,7 @@ def spam(text, num=10, victim, paste=False, tts=False):
         pyautogui.hotkey('ctrl', 'c')
         pyautogui.press('enter')
 
-        for i in range(num):
+        for i in range(num - 1):                # text is already sent once, therefore will iterate for one less          
             pyautogui.hotkey('ctrl', 'v')
             pyautogui.press('enter')
         return
